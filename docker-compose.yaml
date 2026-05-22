@@ -1,0 +1,44 @@
+services:
+  php:
+    build:
+      context: ./php
+    container_name: armonya_php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - database
+      - mailpit
+
+  database:
+    image: mysql:8.0
+    container_name: armonya_database
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: armonya_php
+      MYSQL_USER: app
+      MYSQL_PASSWORD: azerty
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: armonya_phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: database
+      PMA_PORT: 3306
+    depends_on:
+      - database
+
+  mailpit:
+    image: axllent/mailpit
+    container_name: armonya_mailpit
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+
+volumes:
+  mysql_data:

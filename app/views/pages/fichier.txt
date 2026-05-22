@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Armonya Services accompagne les particuliers et les familles en Île-de-France avec des prestations à domicile, des services à la personne et une conciergerie privée.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Armonya Services | Services à domicile et conciergerie en Île-de-France</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="site-logo" aria-label="Retour à l'accueil Armonya Services">
+    <img src="assets/images/logo-armonya-services.png" alt="Logo Armonya Services - Services à domicile et conciergerie privée">
+</a>
+
+            <nav class="main-navigation" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services-a-la-personne.html">Services à la personne</a></li>
+                    <li><a href="conciergerie-privee.html">Conciergerie privée</a></li>
+                    <li><a href="credit-impot.html">Crédit d’impôt</a></li>
+                    <li><a href="recrutement.html">Recrutement</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html#formulaire-devis" class="btn btn-primary">Demander un devis</a>
+                <a href="tel:+33778256161" class="btn btn-secondary">Appeler</a>
+                <a href="https://wa.me/33778256161" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    
+ <footer class="site-footer">
+        <div class="container footer-container">
+            <section class="footer-column" aria-labelledby="footer-brand">
+                <h2 id="footer-brand">Armonya Services</h2>
+                <p>Services à domicile et conciergerie privée en Île-de-France.</p>
+            </section>
+
+            <section class="footer-column" aria-labelledby="footer-navigation">
+                <h2 id="footer-navigation">Navigation</h2>
+                <ul>
+                    <li><a href="services-a-la-personne.html">Services à la personne</a></li>
+                    <li><a href="conciergerie-privee.html">Conciergerie privée</a></li>
+                    <li><a href="recrutement.html">Recrutement</a></li>
+                     <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-column" aria-labelledby="footer-legal">
+                <h2 id="footer-legal">Informations légales</h2>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="gestion-cookies.html">Gestion des cookies</a></li>
+                    <li><a href="conditions-utilisation.html">Conditions d’utilisation</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-column" aria-labelledby="footer-contact">
+                <h2 id="footer-contact">Contact</h2>
+                <address>
+                    Île-de-France<br>
+                    <a href="tel:+33700000000">07 00 00 00 00</a><br>
+                    <a href="mailto:contact@armonya-services.fr">contact@armonya-services.fr</a>
+                </address>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Armonya Services. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ARMONYA SERVICES - STYLE.CSS
+   Site vitrine HTML/CSS
+   Mobile-first, élégant, professionnel et responsive
+========================================================= */
+
+/* =========================
+   1. VARIABLES GLOBALES
+========================= */
+
+:root {
+    --color-primary: #1F2A44;
+    --color-secondary: #F6F1EA;
+    --color-white: #FFFFFF;
+    --color-gold: #C9A86A;
+    --color-sage: #A8B8A0;
+    --color-text: #333333;
+    --color-muted: #666666;
+    --color-light: #FAFAFA;
+    --color-border: #E6E0D8;
+    --color-whatsapp: #25D366;
+
+    --font-title: Georgia, "Times New Roman", serif;
+    --font-body: Arial, Helvetica, sans-serif;
+
+    --container-width: 1200px;
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 24px;
+
+    --shadow-soft: 0 8px 24px rgba(31, 42, 68, 0.08);
+    --shadow-card: 0 10px 30px rgba(31, 42, 68, 0.10);
+
+    --transition: all 0.3s ease;
+}
+
+/* =========================
+   2. RESET DE BASE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    padding-left: 1.2rem;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================
+   3. CLASSES UTILITAIRES
+========================= */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    color: var(--color-gold);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: clamp(1.7rem, 4vw, 2.7rem);
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.hidden-field {
+    display: none;
+}
+
+/* =========================
+   4. BOUTONS
+========================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.85rem 1.3rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: #152036;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-gold);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-whatsapp {
+    background-color: var(--color-whatsapp);
+    color: var(--color-white);
+}
+
+.btn-whatsapp:hover {
+    filter: brightness(0.95);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   5. HEADER + LOGO
+========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 4px 18px rgba(31, 42, 68, 0.06);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.8rem 0;
+}
+
+/* Logo image */
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 170px;
+    flex-shrink: 0;
+}
+
+.site-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Navigation */
+.main-navigation {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav-list a {
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+    color: var(--color-gold);
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+/* =========================
+   6. HERO ACCUEIL
+========================= */
+
+.hero-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-white));
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 650px;
+    font-size: 1.1rem;
+    color: var(--color-muted);
+}
+
+.hero-actions,
+.cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.hero-image img {
+    width: 100%;
+    min-height: 260px;
+    object-fit: cover;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-card);
+}
+
+/* =========================
+   7. HERO DES PAGES INTERNES
+========================= */
+
+.page-hero {
+    padding: 4rem 0;
+    background-color: var(--color-secondary);
+}
+
+.page-hero p {
+    max-width: 780px;
+    color: var(--color-muted);
+}
+
+/* =========================
+   8. CARTES ET GRILLES
+========================= */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+}
+
+.card p {
+    color: var(--color-muted);
+}
+
+.card a,
+.card-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-gold);
+}
+
+.prestation-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.prestation-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.prestation-card h3,
+.prestation-card p,
+.prestation-card a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.prestation-card h3 {
+    margin-top: 1.3rem;
+}
+
+.prestation-card a {
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   9. SECTIONS SPÉCIALES
+========================= */
+
+.services-overview {
+    background-color: var(--color-white);
+}
+
+.prestations-section {
+    background-color: var(--color-light);
+}
+
+.tax-section {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.tax-section h2,
+.tax-section p {
+    color: var(--color-white);
+}
+
+.tax-section .section-label {
+    color: var(--color-gold);
+}
+
+.tax-section .btn-outline {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.tax-section .btn-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.location-section {
+    background-color: var(--color-secondary);
+}
+
+.departments-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.departments-list li {
+    padding: 0.9rem 1rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius-small);
+    border-left: 4px solid var(--color-gold);
+}
+
+.trust-section {
+    background-color: var(--color-white);
+}
+
+.trust-card {
+    text-align: left;
+}
+
+.recruitment-preview {
+    background-color: var(--color-secondary);
+}
+
+.final-cta {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.final-cta h2,
+.final-cta p {
+    color: var(--color-white);
+}
+
+.final-cta .btn-outline {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.final-cta .btn-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* =========================
+   10. LISTES
+========================= */
+
+.steps-list,
+.qualities-list,
+.service-list {
+    margin-top: 1.5rem;
+}
+
+.steps-list li,
+.qualities-list li,
+.service-list li {
+    margin-bottom: 0.8rem;
+}
+
+.qualities-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.qualities-list li {
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: var(--radius-small);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.service-list {
+    padding-left: 1.5rem;
+}
+
+/* =========================
+   11. FORMULAIRES
+========================= */
+
+.forms-section,
+.application-section {
+    background-color: var(--color-light);
+}
+
+.forms-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.form-card,
+.application-form {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.form-card form,
+.application-form {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.4rem;
+}
+
+label {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    outline: none;
+    transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(201, 168, 106, 0.18);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-top: 0.3rem;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+    color: var(--color-muted);
+}
+
+input[type="file"] {
+    padding: 0.7rem;
+}
+
+/* =========================
+   12. CONTACT
+========================= */
+
+.contact-info-section {
+    background-color: var(--color-white);
+}
+
+.contact-card a {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* =========================
+   13. FOOTER
+========================= */
+
+.site-footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding-top: 3rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.footer-column h2 {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column address,
+.footer-column a {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.footer-column ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-column a:hover {
+    color: var(--color-gold);
+}
+
+.footer-bottom {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================
+   14. ACCESSIBILITÉ
+========================= */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(201, 168, 106, 0.6);
+    outline-offset: 3px;
+}
+
+/* =========================
+   15. RESPONSIVE TABLETTE
+========================= */
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        gap: 1.2rem;
+    }
+
+    .site-logo {
+        max-width: 180px;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .header-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero-actions,
+    .cta-actions {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .final-cta .cta-actions {
+        justify-content: center;
+    }
+
+    .two-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .three-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .four-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .departments-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualities-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-card,
+    .application-form {
+        padding: 2rem;
+    }
+}
+
+/* =========================
+   16. RESPONSIVE ORDINATEUR
+========================= */
+
+@media screen and (min-width: 1024px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding: 0.6rem 0;
+    }
+
+    .site-logo {
+        max-width: 155px;
+        flex-shrink: 0;
+    }
+
+    .main-navigation {
+        width: auto;
+        flex: 1;
+    }
+
+    .nav-list {
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-list a {
+        font-size: 0.93rem;
+    }
+
+    .header-actions {
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .header-actions .btn {
+        padding: 0.65rem 0.85rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-section {
+        padding: 6rem 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .page-hero {
+        padding: 5rem 0;
+    }
+
+    .section {
+        padding: 5rem 0;
+    }
+
+    .three-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .four-columns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .forms-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+    }
+
+    .departments-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .qualities-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    }
+}
+
+/* =========================
+   17. GRAND ÉCRAN
+========================= */
+
+@media screen and (min-width: 1280px) {
+    .site-logo {
+        max-width: 170px;
+    }
+
+    .nav-list {
+        gap: 1.2rem;
+    }
+
+    .nav-list a {
+        font-size: 0.95rem;
+    }
+
+    .header-actions .btn {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-image img {
+        min-height: 430px;
+    }
+}
+
+/* =========================
+   18. PETITS ÉCRANS
+========================= */
+
+@media screen and (max-width: 767px) {
+    .site-logo {
+        max-width: 145px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .btn {
+        width: 100%;
+    }
+
+    .header-actions {
+        width: 100%;
+    }
+
+    .hero-actions,
+    .cta-actions {
+        width: 100%;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .page-hero {
+        padding: 3rem 0;
+    }
+
+    .form-card,
+    .application-form {
+        padding: 1.2rem;
+    }
+
+    .site-logo {
+        max-width: 135px;
+    }
+}
